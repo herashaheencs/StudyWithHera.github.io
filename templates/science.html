@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+{% extends 'base.html'%}
+{% block title %}
+home page
+{% endblock %}
+{% block content %}
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="veiwport" content="width = device-width, initial-scale =1">
+        <title>Art</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+
+        <style>
+            body {
+                background-image: url(/background.jpg);
+                background-color: rgb(99, 231, 99);
+            }
+            .jumptron{
+                background-color: aqua;
+                color: goldenrod;
+                align-self: center;
+            }
+            .tab-content {
+                text-align: center;
+                border-left: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                padding: 10px;
+            }
+            .nav-tabs {
+                margin-bottom: 0;
+            }
+            .page-header{
+                color: rgb(0, 65, 65);
+                text-align: center;
+            }
+            .work-box{
+                background-color: rgb(147, 212, 147);
+                color:  rgb(0, 65, 65);
+                text-align: left;
+                border-radius: 25px;
+                border: 2px solid darkgray;
+                padding: 20px;
+            }
+            .lesson-begginer{
+                background-color: white;
+                color:  rgb(0, 65, 65);
+                text-align: left;
+                border-radius: 25px;
+                border: 2px solid darkgray;
+                padding: 20px;
+            }
+            .lesson-intermediate{
+                background-color: white;
+                color:  rgb(0, 65, 65);
+                text-align: left;
+                border-radius: 25px;
+                border: 2px solid darkgray;
+                padding: 20px;
+            }
+            .lesson-advanced{
+                background-color: white;
+                color:  rgb(0, 65, 65);
+                text-align: left;
+                border-radius: 25px;
+                border: 2px solid darkgray;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        
+    <div class="container" >
+
+    <div class="page-header">
+        <h1>Science</h1>
+    </div>
+
+    <div class="work-box">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="bioligy-tab" data-toggle="tab" href="#bioligy" role="tab" aria-controls="bioligy" aria-selected="false">Bioligy</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="chemistry-tab" data-toggle="tab" href="#chemistry" role="tab" aria-controls="chemistry" aria-selected="false">Chemistry</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="physics-tab" data-toggle="tab" href="#physics" role="tab" aria-controls="physics" aria-selected="false">Physics</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="bioligy" role="tabpanel" aria-labelledby="bioloigy-tab">
+                <div class="lesson-begginer">
+                    <h2>Bioligy class</h2>
+			<p>Please answer and submit the bioligy class tast below on Food, Chains and webs </p>
+			<form class="needs-validation" novalidate>
+			<div class="container-fluid">
+			<p> An example of a decomposer is</p>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question11" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question11">Bacteria</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question12" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question12">Water</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question13" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question13">Energy</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question14" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question14">Niche</label>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+			<p> Which list shows a possible order in which energy moves through the ecosystem?</p>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question21" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question21">Herbivore,Carnivore,Sun,Producer,Decomposer</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question22" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question22">Sun,Producer,Herbivore,Carnivore,Decomposer</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question23" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question23">Sun,Producer,Predator,Consumer,Decomposer</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question24" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question24">Producer,Sun,Carnivore,Herbivore,Decomposer</label>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+			<p> What two parts of the call are different between an animal call and a plant cell?</p>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question31" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question31">Cell wall and Nucleus</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question32" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question32">Nucleus and Cell Membrane</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question33" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question33">Cell wall and Chloroplast</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question34" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question34">Mitochondria and Chloroplast</label>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+			<p> The Algea at the begiining of the food chain are?</p>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question41" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question41">Consumers</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question42" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question42">Decomposers</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question43" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question43">Producers</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question44" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question44">Heterotrophs</label>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+			<p> The niche of a Producer is to</p>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question51" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question51">Eat other consumers</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question52" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question52">Provide food for Carnivores</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question53" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question53">Make carbon dioxide-oxygen</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="question54" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="question54">Provide food for themselves and other organisms</label>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<button class="btn btn-primary" type="submit">Submit answers</button>
+			</div>
+		</form>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="chemistry" role="tabpanel" aria-labelledby="chemistry-tab">
+                <div class="lesson-intermediate">
+                    <h2>Chemistry class</h2>
+		    <p>In this lesson you will be correctly identifying chemicals by the color in which there flames burn. </p>
+			
+			<div class="container-fluid">
+				<img src="{{url_for('static',filename='images/Chemistry/Flame-Blue.jpg')}}" alt="..." class="img-thumbnail rounded float-left">
+				<form>
+					<div class="form-group">
+						<label for=chemistrySelect1>Which chemical is shown as a flame in the figure</label>
+						<select class="form-control" id="chemistrySelect1">
+							<option>Cupric chloride</option>
+							<option>Lithium chloride</option>
+							<option>Potasium chloride</option>
+							<option>Sodium carbonate</option>
+						</select>
+					</div>
+				</form>  
+			</div>
+
+			<div class="container-fluid">
+				<img src="{{url_for('static',filename='images/Chemistry/purple-fire.jpg')}}" alt="..." class="img-thumbnail rounded float-left">
+				<form>
+					<div class="form-group">
+						<label for=chemistrySelect1>Which chemical is shown as a flame in the figure</label>
+						<select class="form-control" id="chemistrySelect1">
+							<option>Cupric chloride</option>
+							<option>Lithium chloride</option>
+							<option>Potasium chloride</option>
+							<option>Sodium carbonate</option>
+						</select>
+					</div>
+				</form>  
+			</div>
+
+			<div class="container-fluid">
+				<img src="{{url_for('static',filename='images/Chemistry/220px-Flametest--Na.swn.jpg')}}" alt="..." class="img-thumbnail rounded float-left">
+				<form>
+					<div class="form-group">
+						<label for=chemistrySelect1>Which chemical is shown as a flame in the figure</label>
+						<select class="form-control" id="chemistrySelect1">
+							<option>Cupric chloride</option>
+							<option>Lithium chloride</option>
+							<option>Potasium chloride</option>
+							<option>Sodium carbonate</option>
+						</select>
+					</div>
+				</form>  
+			</div>
+
+			<div class="container-fluid">
+				<button class="btn btn-primary" type="submit">Submit answers</button>
+			</div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="physics" role="tabpanel" aria-labelledby="physics-tab">
+                <div class="lesson-advanced">
+                    <h2>Physics class</h2>
+			<p>Watch and make notes on this video talking you through the fundimentals of gravity</p>
+			<div class="container-fluid">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://youtu.be/2RQ1sjVu-Jo" allowfullscreen></iframe>
+				</div>
+			</div>
+                </div>
+            </div>
+          </div>
+        
+    </div>
+    
+    
+    </div>
+    </body>
+    {% endblock %}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

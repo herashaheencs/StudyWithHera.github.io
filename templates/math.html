@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+{% extends 'base.html'%}
+{% block title %}
+home page
+{% endblock %}
+{% block content %}
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="veiwport" content="width = device-width, initial-scale =1">
+        <title>Art</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+
+        <style>
+            body {
+                background-image: url(/background.jpg);
+                background-color: lightblue;
+            }
+            .jumptron{
+                background-color: aqua;
+                color: goldenrod;
+                align-self: center;
+            }
+            .tab-content {
+                text-align: center;
+                border-left: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                padding: 10px;
+            }
+            .nav-tabs {
+                margin-bottom: 0;
+            }
+            .page-header{
+                color: rgb(0, 65, 65);
+                text-align: center;
+            }
+            .lesson-begginer{
+                background-color: white;
+                color:  rgb(0, 65, 65);
+                text-align: left;
+                border-radius: 25px;
+                border: 2px solid darkgray;
+                padding: 20px;
+		overflow: auto;
+            }
+            .lesson-intermediate{
+                background-color: white;
+                color:  rgb(0, 65, 65);
+                text-align: left;
+                border-radius: 25px;
+                border: 2px solid darkgray;
+                padding: 20px;
+            }
+            .lesson-advanced{
+                background-color: white;
+                color:  rgb(0, 65, 65);
+                text-align: left;
+                border-radius: 25px;
+                border: 2px solid darkgray;
+                padding: 20px;
+            }
+            .work-box{
+                background-color: rgb(200, 218, 224);
+                color:  rgb(0, 65, 65);
+                text-align: left;
+                border-radius: 25px;
+                border: 2px solid darkgray;
+                padding: 20px;
+            }
+	    .q1-image{
+                text-align: left;
+		border-left: 2px;
+		border-right: 2px;
+		border-bottom: 2px;
+		padding: 10px;
+		height: 70%;
+		width: 70%;
+            }
+	    .workbox{
+		height: 90%;
+		width: 90;
+                padding: 20px;
+            }
+	    .form-group{
+		border-radius: 25px;
+		padding: 20px;
+		align-items: bottom;
+	    }
+	    .container{
+		text-align: left;
+                border-left: 2px;
+                border-right: 2px;
+                border-bottom: 2px;
+                padding: 10px;
+	    }
+	
+        </style>
+    </head>
+    <body>
+        
+    <div class="container" >
+
+    <div class="page-header">
+        <h1>Maths</h1>
+    </div>
+
+    <div class="work-box">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="beginner-tab" data-toggle="tab" href="#beginner" role="tab" aria-controls="beginner" aria-selected="true">Beginner</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="intermediate-tab" data-toggle="tab" href="#intermediate" role="tab" aria-controls="intermediate" aria-selected="false">Intermediate</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="advanced-tab" data-toggle="tab" href="#advanced" role="tab" aria-controls="advanced" aria-selected="false">Advanced</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="beginner" role="tabpanel" aria-labelledby="begginer-tab">
+                <div class="lesson-begginer">
+                    Beginner class
+		<div class="text-center">
+                <img src="{{url_for('static', filename='images/Math/brain-teaser-number-maths-puzzles-apple-and-banana-10345051059c93cc443d357.40100480.png')}}" class="rounded" alt="Responsive image" width="90%" height="auto">
+                </div>
+                    <form class="needs-validation" novalidate>
+
+                        <div class="container">
+			  <label for="beginer1">Answer 1</label>
+                          <input type="text" class="form-control float-right" id="math_beginer1" placeholder="Answer 1"  required>
+			  <div class="valid-tooltip">
+				Enter answer
+			  </div>
+                        </div>
+			<button type="submit" value="submit" class="btn btn-primary" name= "beg1submit" method="POST">Submit</button>
+                      </form>
+			<div class="text-center">
+                        	<img src="{{url_for('static', filename='images/Math/brain-teaser-number-maths-puzzles-math-question-93894760958ea42fb829d53.24442200.png')}}" class="rounded" alt="Responsive image" width="90%" height="auto">
+                   	</div>
+		    <form class="was-validated">
+               		<div class="container">
+				<select class="custom-select" required>
+					<option value="">slect a option</option>
+					<option value="1">14</option>
+					<option value="2">22</option>
+					<option value="3">3</option>
+					<option value="4">7</option>
+				</select>
+				<div class="invalid-feedback">Please selct a option</div>
+			</div>
+		    </form>     
+		<button type="button" class="btn btn-info float-right">Submit</button>
+
+
+                </div>
+		<div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                      </div>
+            </div>
+
+            <div class="tab-pane fade" id="intermediate" role="tabpanel" aria-labelledby="intermediate-tab">
+                <div class="lesson-intermediate">
+                    Intermediate class
+		
+		<div class="text-center">
+                <img src="{{url_for('static', filename='images/Math/34179D2F00000578-0-image-m-18_1463098051000.jpg')}}" class="rounded" alt="Responsive image" width="90%" height="auto">
+                </div>
+                    <form class="needs-validation" novalidate>
+
+                        <div class="container">
+			  <label for="beginer1">Answer 1</label>
+                          <input type="text" class="form-control float-right" id="beginer1" placeholder="Answer 1" value="jack" required>
+			  <div class="valid-tooltip">
+				Enter answer
+			  </div>
+                        </div>
+
+                      </form>
+			<div class="text-center">
+                        	<img src="{{url_for('static', filename='images/Math/Viral-Math-problem-2019.jpg')}}" class="rounded" alt="Responsive image" width="90%" height="auto">
+                   	</div>
+		    <form class="was-validated">
+               		<div class="container">
+				<select class="custom-select" required>
+					<option value="">slect a option</option>
+					<option value="1">1</option>
+					<option value="2">12</option>
+					<option value="3">16</option>
+					<option value="4">7</option>
+				</select>
+				<div class="invalid-feedback">Please selct a option</div>
+			</div>
+		    </form>     
+			<button type="button" class="btn btn-info float-right">Submit</button>
+		</div>
+
+			<div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%"></div>
+                       	</div>
+                
+		</div>
+		<div class="tab-pane fade" id="advanced" role="tabpanel" aria-labelledby="advanced-tab">
+                <div class="lesson-advanced">
+                    Advanced class
+		
+		<div class="text-center">
+                <img src="{{url_for('static', filename='images/Math/perimeter_4.gif')}}" class="rounded" alt="Responsive image" width="90%" height="auto">
+                </div>
+                    <form class="needs-validation" novalidate>
+
+                        <div class="container">
+			  <label for="beginer1">Answer 1</label>
+                          <input type="text" class="form-control float-right" id="beginer1" placeholder="Answer 1" value="jack" required>
+			  <div class="valid-tooltip">
+				Enter answer
+			  </div>
+                        </div>
+
+                      </form>
+			<div class="text-center">
+                        	<img src="{{url_for('static', filename='images/Math/Slide7.png')}}" class="rounded" alt="Responsive image" width="90%" height="auto">
+                   	</div>
+		    <form class="was-validated">
+               		<div class="container">
+				<select class="custom-select" required>
+					<option value="">slect a option</option>
+					<option value="1">77</option>
+					<option value="2">88</option>
+					<option value="3">100</option>
+					<option value="4">167</option>
+				</select>
+				<div class="invalid-feedback">Please selct a option</div>
+			</div>
+		    </form>     
+			<button type="button" class="btn btn-info float-right">Submit</button>
+		</div>
+			<div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 66%"></div>
+                        </div> 
+                
+            
+          </div>
+        
+    </div>
+    
+    
+    
+    </div>
+    </body>
+    {% endblock %}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

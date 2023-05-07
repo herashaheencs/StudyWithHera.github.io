@@ -1,0 +1,11 @@
+--2020-11-29 20:32:51--  https://i.insider.com/5a4bdcc6cb9df434008b4577?width=1100
+Resolving i.insider.com (i.insider.com)... 151.101.18.217
+Connecting to i.insider.com (i.insider.com)|151.101.18.217|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 36620 (36K) [image/png]
+Saving to: ‘5a4bdcc6cb9df434008b4577?width=1100’
+
+5a4bdcc6cb9df434008b4577?width=1100                         0%[                                                                                                                                   ]       0  --.-KB/s               5a4bdcc6cb9df434008b4577?width=1100                       100%[==================================================================================================================================>]  35.76K  --.-KB/s    in 0.003s  
+
+2020-11-29 20:32:51 (11.6 MB/s) - ‘5a4bdcc6cb9df434008b4577?width=1100’ saved [36620/36620]
+

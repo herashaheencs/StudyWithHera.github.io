@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+{% extends 'base.html'%}
+{% block title %}
+home page
+{% endblock %}
+{% block content %}
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="veiwport" content="width = device-width, initial-scale =1">
+        <title>Art</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+
+        <style>
+            body {
+                background-image: url(/background.jpg);
+                background-color: burlywood;
+            }
+            .jumptron{
+                background-color: aqua;
+                color: goldenrod;
+                align-self: center;
+            }
+            .tab-content {
+                text-align: center;
+                border-left: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                padding: 10px;
+            }
+            .nav-tabs {
+                margin-bottom: 0;
+            }
+            .page-header{
+                color: rgb(0, 65, 65);
+                text-align: center;
+            }
+            .work-box{
+                background-color: rgb(226, 206, 179);
+                color:  rgb(0, 65, 65);
+                text-align: left;
+                border-radius: 25px;
+                border: 2px solid darkgray;
+                padding: 20px;
+            }
+            .lesson-begginer{
+                background-color: white;
+                color:  rgb(0, 65, 65);
+                text-align: left;
+                border-radius: 25px;
+                border: 2px solid darkgray;
+                padding: 20px;
+            }
+            .lesson-intermediate{
+                background-color: white;
+                color:  rgb(0, 65, 65);
+                text-align: left;
+                border-radius: 25px;
+                border: 2px solid darkgray;
+                padding: 20px;
+            }
+            .lesson-advanced{
+                background-color: white;
+                color:  rgb(0, 65, 65);
+                text-align: left;
+                border-radius: 25px;
+                border: 2px solid darkgray;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        
+    <div class="container" >
+
+    <div class="page-header">
+        <h1>History</h1>
+    </div>
+	<div class="container-fluid">
+		<p>You have been set revision material for a test on WW1. Beloq shows a timeline of the key events within WW1 that you will be tested on. </p>
+	</div>
+    <div class="work-box">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first" aria-selected="false">1914</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false">1915</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="third-tab" data-toggle="tab" href="#third" role="tab" aria-controls="third" aria-selected="false">1916</a>
+            </li>
+	    <li class="nav-item" role="presentation">
+              <a class="nav-link" id="forth-tab" data-toggle="tab" href="#forth" role="tab" aria-controls="forth" aria-selected="false">1917</a>
+            </li>
+	    <li class="nav-item" role="presentation">
+              <a class="nav-link" id="fith-tab" data-toggle="tab" href="#fith" role="tab" aria-controls="fith" aria-selected="false">1918</a>
+            </li>
+	   
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                <div class="lesson-begginer">
+                    <h2>1914 key events </h2>
+			<div class="container-fluid">
+				<div class="row row-cols-1 row-cols-md-2">
+					
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1914/austria-serbia-headlines.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">July 28th</h5>
+								<p class="card-text">Austria-Hungary declares war on Serbia </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1914/Soldats_allemands_Place_Rogier.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">August 2-7</h5>
+								<p class="card-text">Germany invades Luxemburg and Belgium. France invades Alsace. British forces arrive in France. The allied nations against Germany now include Great Britain, Russia, Italy, Australia, New Zeland, South Affrica, Rhodesia, Romania, Greece, France, Belgium, United States, Canada, Serbia, India, Portugal, Montenegro and Poland. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1914/220px-Russian_Troops_NGM-v31-p372.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">August 10th</h5>
+								<p class="card-text">Austria-Hungary invades Russia </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1914/250px-German_soldiers_Battle_of_Marne_WWI.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">September 9th</h5>
+								<p class="card-text">Allied forces halt German advance into France during First Battle of Marne </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+                <div class="lesson-intermediate">
+                    <h2>1915 key evenys</h2>
+			<div class="container-fluid">
+				<div class="row row-cols-1 row-cols-md-2">
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1915/a4c1be.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Febuary 18th</h5>
+								<p class="card-text">Germany begins naval blockade of Great Britain </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1915/ANZAC-Cove-troops-shore-Allied-Dardanelles-Campaign.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">April 25th</h5>
+								<p class="card-text">Allied forces land on the Gallipoli Peninsula of the Ottoman Empire.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1915/NH-892-960x640-1200x0-c-default.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">May 7th</h5>
+								<p class="card-text">German submarine sinks the passeneger liner Lustania during crossing from New York to Liverpool. Killing 128 Americans </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1915/bhbhbh.PNG')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">May 23rd</h5>
+								<p class="card-text">Italy declares war on Austria-Hungary </p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+                <div class="lesson-advanced">
+                   <h2> 1916 key events</h2>
+			<div class="container-fluid">
+				<div class="row row-cols-1 row-cols-md-2">
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1916/soldiers-French-front-line-Battle-of-Verdun-1916.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Febuary 21st</h5>
+								<p class="card-text">Germany begins the attack on Verdun. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1916/battle-of-jutland.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">May 31st</h5>
+								<p class="card-text">Naval battle of Jutland takes place between British and German fleets. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1916/102003192sommehires_trans_NvBQzQNjv4Bq1otmVHALaTv2ghQ0pTDq-L6Xj2WECU5tGTp4vDMBGsY.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">July 1st</h5>
+								<p class="card-text">Allied offensive begins the Battle of the Somme. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1916/Kampfbereiche_Verdun_Mort_Homme4.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">December 18th</h5>
+								<p class="card-text">Battle of Verdun ends with 550,000 French and 450,000 German casualties </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+                </div>
+	</div>
+
+		<div class="tab-pane fade" id="forth" role="tabpanel" aria-labelledby="forth-tab">
+                <div class="lesson-advanced">
+                   <h2> 1917 key events</h2>
+			<div class="container-fluid">
+				<div class="row row-cols-1 row-cols-md-2">
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1917/German_UC-1_class_submarine-BG-2000x1200.gif')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Febuary 1st</h5>
+								<p class="card-text">Germany returns to unrestricted submarine warfare halted after the sinking of the Lustania. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1917/05a5b5ea26bb58b965e6ad15811a353d4be68dc0.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">April 6th</h5>
+								<p class="card-text">The United States declared war on germany. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1917/1917June27World.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">June 24th</h5>
+								<p class="card-text">American forces arrive in France. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1917/10825032.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">December 15th</h5>
+								<p class="card-text">Russia signs armistice with Germany </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+                </div>
+            </div>
+		<div class="tab-pane fade" id="fith" role="tabpanel" aria-labelledby="fith-tab">
+                <div class="lesson-advanced">
+                   <h2> 1918 key events</h2>
+			<div class="container-fluid">
+				<div class="row row-cols-1 row-cols-md-2">
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1918/Delegates-negotiations-treaties-Brest-Litovsk-1918.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">March 3rd</h5>
+								<p class="card-text">Russia signs the Treaty of Brest-Litovsk with Germany. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1918/296px-German_soldiers_train_for_the_Spring_Offensive_IMG.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">May 21st</h5>
+								<p class="card-text">Germany begins its final offencive of the war. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1918/US23rdInfantry37mmGunInActionFrance1918-ARC531005.gif')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">September 26th</h5>
+								<p class="card-text">Allied forces begin the attack at Meusse-Argonne, the final offencive of the war. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card">
+							<img src="{{url_for('static',filename='images/History/1918/wwi-armistice-getty-487953729.jpg')}}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">November 11th</h5>
+								<p class="card-text">Germany signs the Armistice at Compiegne, ending World War 1. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+                </div>
+		</div>
+          </div>
+        
+    </div>
+    
+    
+    </div>
+    </body>
+    {% endblock %}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
